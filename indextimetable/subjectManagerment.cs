@@ -10,19 +10,19 @@ namespace indextimetable
     {
         public List<Table> getSubject()
         {
-            var db = new thoiKhoaBieuEntities2();
+            var db = new thoiKhoaBieuEntities3();
             List<Table> subject = db.Tables.ToList();
             return subject;
         }
         public Table getSubjects(int ID)
         {
-            var db = new thoiKhoaBieuEntities2();
+            var db = new thoiKhoaBieuEntities3();
             var subject = db.Tables.Find(ID);
             return subject;
         }
         public void createSubject(string CaHoc , string thu2, string thu3,string thu4,string thu5,string thu6,string thu7)
         {
-            var db = new thoiKhoaBieuEntities2();
+            var db = new thoiKhoaBieuEntities3();
             var newSubject = new Table();
             newSubject.CA_HỌC = CaHoc;
             newSubject.Thứ_2 = thu2;
@@ -36,8 +36,8 @@ namespace indextimetable
         }
         public void updateSubject(int id, string CaHoc, string thu2, string thu3, string thu4, string thu5, string thu6, string thu7)
         {
-            var db = new thoiKhoaBieuEntities2();
-            var currentSubject = db.Tables.Find(CaHoc);
+            var db = new thoiKhoaBieuEntities3();
+            var currentSubject = db.Tables.Find(id);
             currentSubject.CA_HỌC = CaHoc;
             currentSubject.Thứ_2 = thu2;
             currentSubject.Thứ_3 = thu3;

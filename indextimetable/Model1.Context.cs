@@ -13,10 +13,10 @@ namespace indextimetable
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class thoiKhoaBieuEntities2 : DbContext
+    public partial class thoiKhoaBieuEntities3 : DbContext
     {
-        public thoiKhoaBieuEntities2()
-            : base("name=thoiKhoaBieuEntities2")
+        public thoiKhoaBieuEntities3()
+            : base("name=thoiKhoaBieuEntities3")
         {
         }
     

@@ -39,7 +39,7 @@
           <Property Name="Thứ_6" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="Thứ_7" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="thoiKhoaBieuEntities2" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="thoiKhoaBieuEntities3" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Tables" EntityType="Self.Table" />
         </EntityContainer>
       </Schema>
@@ -47,7 +47,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="thoiKhoaBieuModelStoreContainer" CdmEntityContainer="thoiKhoaBieuEntities2">
+        <EntityContainerMapping StorageEntityContainer="thoiKhoaBieuModelStoreContainer" CdmEntityContainer="thoiKhoaBieuEntities3">
           <EntitySetMapping Name="Tables">
             <EntityTypeMapping TypeName="thoiKhoaBieuModel.Table">
               <MappingFragment StoreEntitySet="Table">
