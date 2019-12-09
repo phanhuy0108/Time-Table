@@ -22,11 +22,14 @@ namespace indextimetable
             this.btnSetRemind.Click += BtnSetRemind_Click;
             this.btnCancel.Click += BtnCancel_Click;
             this.dataGridView1.DoubleClick += DataGridView1_DoubleClick;
+            
         }
+
+       
 
         private void DataGridView1_DoubleClick(object sender, EventArgs e)
         {
-            if(dataGridView1.SelectedRows.Count ==1)
+            if (dataGridView1.SelectedRows.Count == 1)
             {
                 var subject = (Table)this.dataGridView1.SelectedRows[0].DataBoundItem;
                 var updateForm = new updateStudentForm(subject.ID);

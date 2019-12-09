@@ -37,7 +37,6 @@ namespace indextimetable
             business.createSubject(cahoc, thu2, thu3, thu4, thu5,thu6,thu7);
             MessageBox.Show("Add new subject successfully");
             this.Close();
-
         }
 
         

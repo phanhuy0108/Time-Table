@@ -40,6 +40,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(-1, 0);
             this.dataGridView1.Name = "dataGridView1";
@@ -52,13 +53,13 @@
             this.btnAdd.Location = new System.Drawing.Point(93, 381);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 1;
+            this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
             // btnSetRemind
             // 
-            this.btnSetRemind.Location = new System.Drawing.Point(382, 381);
+            this.btnSetRemind.Location = new System.Drawing.Point(385, 381);
             this.btnSetRemind.Name = "btnSetRemind";
             this.btnSetRemind.Size = new System.Drawing.Size(75, 23);
             this.btnSetRemind.TabIndex = 2;
@@ -67,7 +68,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(636, 381);
+            this.btnCancel.Location = new System.Drawing.Point(682, 381);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 2;
@@ -83,6 +84,7 @@
             this.Controls.Add(this.btnSetRemind);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dataGridView1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "Form1";
             this.Text = "TIME TABLE";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
