@@ -76,11 +76,11 @@
     <Compile Include="createSubjectForm.Designer.cs">
       <DependentUpon>createSubjectForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="indexTimeTable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="indexTimeTable.Designer.cs">
+      <DependentUpon>indexTimeTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -97,6 +97,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="setTimeRemind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setTimeRemind.Designer.cs">
+      <DependentUpon>setTimeRemind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showTimeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showTimeTable.Designer.cs">
+      <DependentUpon>showTimeTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Table.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -112,8 +124,14 @@
     <EmbeddedResource Include="createSubjectForm.resx">
       <DependentUpon>createSubjectForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="indexTimeTable.resx">
+      <DependentUpon>indexTimeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setTimeRemind.resx">
+      <DependentUpon>setTimeRemind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showTimeTable.resx">
+      <DependentUpon>showTimeTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="updateStudentForm.resx">
       <DependentUpon>updateStudentForm.cs</DependentUpon>

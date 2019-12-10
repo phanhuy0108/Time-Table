@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace indextimetable
 {
-    public partial class Form1 : Form
+    public partial class indexTimeTable : Form
     {
         private subjectManagerment Business;
-        public Form1()
+        public indexTimeTable()
         {
             Business = new subjectManagerment();
             InitializeComponent();
@@ -22,12 +22,21 @@ namespace indextimetable
             this.tmAdd.Click += TmAdd_Click;
             this.tmCancel.Click += TmCancel_Click;
             this.tmSet.Click += TmSet_Click;
+            this.timer1.Tick += Timer1_Tick;
             
+            
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            label.Text = DateTime.Now.ToLongTimeString();
+
         }
 
         private void TmSet_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var setTimeRemind = new setTimeRemind();
+            setTimeRemind.ShowDialog();
         }
 
         private void TmCancel_Click(object sender, EventArgs e)
@@ -65,6 +74,11 @@ namespace indextimetable
         }
 
         private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
