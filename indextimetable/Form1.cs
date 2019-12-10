@@ -18,14 +18,29 @@ namespace indextimetable
             Business = new subjectManagerment();
             InitializeComponent();
             this.Load += Form1_Load;
-            this.btnAdd.Click += BtnAdd_Click;
-            this.btnSetRemind.Click += BtnSetRemind_Click;
-            this.btnCancel.Click += BtnCancel_Click;
             this.dataGridView1.DoubleClick += DataGridView1_DoubleClick;
+            this.tmAdd.Click += TmAdd_Click;
+            this.tmCancel.Click += TmCancel_Click;
+            this.tmSet.Click += TmSet_Click;
             
         }
 
-       
+        private void TmSet_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void TmCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void TmAdd_Click(object sender, EventArgs e)
+        {
+            var createSubjectForm = new createSubjectForm();
+            createSubjectForm.ShowDialog();
+            this.loadAllSubject();
+        }
 
         private void DataGridView1_DoubleClick(object sender, EventArgs e)
         {
@@ -38,22 +53,6 @@ namespace indextimetable
             }
         }
 
-        private void BtnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void BtnSetRemind_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void BtnAdd_Click(object sender, EventArgs e)
-        {
-            var createSubjectForm = new createSubjectForm();
-            createSubjectForm.ShowDialog();
-            this.loadAllSubject();
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -63,6 +62,11 @@ namespace indextimetable
         {
             var subject = this.Business.getSubject();
             this.dataGridView1.DataSource = subject;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }

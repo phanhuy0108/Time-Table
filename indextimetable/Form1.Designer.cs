@@ -29,10 +29,14 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnSetRemind = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.tmAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.tmSet = new System.Windows.Forms.ToolStripMenuItem();
+            this.tmCancel = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -42,52 +46,74 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-1, 0);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 27);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(846, 351);
+            this.dataGridView1.Size = new System.Drawing.Size(929, 380);
             this.dataGridView1.TabIndex = 0;
             // 
-            // btnAdd
+            // panel1
             // 
-            this.btnAdd.Location = new System.Drawing.Point(93, 381);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "ADD";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(929, 407);
+            this.panel1.TabIndex = 3;
             // 
-            // btnSetRemind
+            // menuStrip1
             // 
-            this.btnSetRemind.Location = new System.Drawing.Point(385, 381);
-            this.btnSetRemind.Name = "btnSetRemind";
-            this.btnSetRemind.Size = new System.Drawing.Size(75, 23);
-            this.btnSetRemind.TabIndex = 2;
-            this.btnSetRemind.Text = "SET REMIND";
-            this.btnSetRemind.UseVisualStyleBackColor = true;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tmAdd,
+            this.tmSet,
+            this.tmCancel});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(13, 4, 0, 4);
+            this.menuStrip1.Size = new System.Drawing.Size(929, 27);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // btnCancel
+            // tmAdd
             // 
-            this.btnCancel.Location = new System.Drawing.Point(682, 381);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 2;
-            this.btnCancel.Text = "CANCEL";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.tmAdd.Name = "tmAdd";
+            this.tmAdd.Size = new System.Drawing.Size(43, 20);
+            this.tmAdd.Text = "ADD";
+            // 
+            // tmSet
+            // 
+            this.tmSet.Name = "tmSet";
+            this.tmSet.Size = new System.Drawing.Size(84, 20);
+            this.tmSet.Text = "SET REMIND";
+            // 
+            // tmCancel
+            // 
+            this.tmCancel.Name = "tmCancel";
+            this.tmCancel.Size = new System.Drawing.Size(54, 19);
+            this.tmCancel.Text = "CLOSE";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 450);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnSetRemind);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(929, 407);
+            this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TIME TABLE";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -95,9 +121,11 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnSetRemind;
-        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem tmAdd;
+        private System.Windows.Forms.ToolStripMenuItem tmSet;
+        private System.Windows.Forms.ToolStripMenuItem tmCancel;
     }
 }
 
