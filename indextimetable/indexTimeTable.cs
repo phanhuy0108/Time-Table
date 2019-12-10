@@ -20,7 +20,7 @@ namespace indextimetable
             this.Load += Form1_Load;
             this.dataGridView1.DoubleClick += DataGridView1_DoubleClick;
             this.tmAdd.Click += TmAdd_Click;
-            this.tmCancel.Click += TmCancel_Click;
+            
             this.tmSet.Click += TmSet_Click;
             this.timer1.Tick += Timer1_Tick;
 
@@ -57,11 +57,7 @@ namespace indextimetable
             setTimeRemind.ShowDialog();
         }
 
-        private void TmCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+        
         private void TmAdd_Click(object sender, EventArgs e)
         {
             var createSubjectForm = new createSubjectForm();
