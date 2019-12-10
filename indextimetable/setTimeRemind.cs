@@ -1,28 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace indextimetable
 {
     public partial class setTimeRemind : Form
-    {
-        private showTimeTable show = null;
-
-       
-
+    {     
         public setTimeRemind()
         {
             InitializeComponent();
             
-            this.rbOn.Checked = rbOn.AlarmSet;
-            this.rbOff.Checked = showtable.AlarmSet;
-            this.dateTimePicker1.Text = showtable.TimeSet.ToShortTimeString();
+            
             this.btnOk.Click += BtnOk_Click;
             this.btnClose.Click += BtnClose_Click;
 
@@ -35,25 +22,17 @@ namespace indextimetable
 
         private void BtnOk_Click(object sender, EventArgs e)
         {
-            show.AlarmSet = rbOn.Checked;
-
-            if (rbOn.Checked)
+            if(rbOn.Checked)
             {
-                try
-                {
-                    show.TimeSet = DateTime.Parse(this.dateTimePicker1.Text);
-                }
-                catch (Exception ex)
-                {
-                    show.TimeSet = DateTime.Now;
-                }
+                // on selected
+                indexTimeTable.reminderDateTime = dateTimePicker1.Value;
             }
+            this.Close();
         }
-        
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void rbOn_CheckedChanged(object sender, EventArgs e)
         {
-
+            btnOk.Enabled = rbOn.Checked;
         }
     }
 }

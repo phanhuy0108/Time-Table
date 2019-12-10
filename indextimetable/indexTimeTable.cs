@@ -1,18 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace indextimetable
 {
     public partial class indexTimeTable : Form
     {
-        private subjectManagerment Business;
+        private readonly subjectManagerment Business;
+
+        // The timer.
+        readonly System.Threading.Timer TheTimer = null;
+
+        public static DateTime? reminderDateTime = null;
+
         public indexTimeTable()
         {
             Business = new subjectManagerment();
@@ -23,8 +23,26 @@ namespace indextimetable
             this.tmCancel.Click += TmCancel_Click;
             this.tmSet.Click += TmSet_Click;
             this.timer1.Tick += Timer1_Tick;
-            
-            
+
+            // Make the timer start now and tick every 500 ms.
+            TheTimer = new System.Threading.Timer(this.Tick, null, 0, 5000);
+        }
+
+        // The timer ticked.
+        public void Tick(object info)
+        {
+            this.Invoke((Action)this.CheckReminderDate);
+        }
+
+        // Update the countdown on the UI thread.
+        private void CheckReminderDate()
+        {
+            if(reminderDateTime < DateTime.Now)
+            {
+                MessageBox.Show("now");
+                reminderDateTime = null;
+            }           
+            Debug.WriteLine(DateTime.Now);
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -62,7 +80,6 @@ namespace indextimetable
             }
         }
 
-
         private void Form1_Load(object sender, EventArgs e)
         {
             this.loadAllSubject();
@@ -71,16 +88,6 @@ namespace indextimetable
         {
             var subject = this.Business.getSubject();
             this.dataGridView1.DataSource = subject;
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

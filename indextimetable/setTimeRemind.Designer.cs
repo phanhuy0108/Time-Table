@@ -52,13 +52,14 @@
             this.rbOn.Name = "rbOn";
             this.rbOn.Size = new System.Drawing.Size(39, 17);
             this.rbOn.TabIndex = 1;
-            this.rbOn.TabStop = true;
             this.rbOn.Text = "On";
             this.rbOn.UseVisualStyleBackColor = true;
+            this.rbOn.CheckedChanged += new System.EventHandler(this.rbOn_CheckedChanged);
             // 
             // rbOff
             // 
             this.rbOff.AutoSize = true;
+            this.rbOff.Checked = true;
             this.rbOff.Location = new System.Drawing.Point(15, 55);
             this.rbOff.Name = "rbOff";
             this.rbOff.Size = new System.Drawing.Size(39, 17);
@@ -66,7 +67,6 @@
             this.rbOff.TabStop = true;
             this.rbOff.Text = "Off";
             this.rbOff.UseVisualStyleBackColor = true;
-            this.rbOff.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -78,10 +78,11 @@
             this.groupBox1.Size = new System.Drawing.Size(308, 95);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Set Remid";
+            this.groupBox1.Text = "Set Reminder";
             // 
             // btnOk
             // 
+            this.btnOk.Enabled = false;
             this.btnOk.Location = new System.Drawing.Point(27, 122);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);

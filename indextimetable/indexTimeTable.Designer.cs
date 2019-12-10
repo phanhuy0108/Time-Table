@@ -57,7 +57,6 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(928, 256);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel1
             // 
@@ -103,8 +102,8 @@
             // tmSet
             // 
             this.tmSet.Name = "tmSet";
-            this.tmSet.Size = new System.Drawing.Size(84, 19);
-            this.tmSet.Text = "SET REMIND";
+            this.tmSet.Size = new System.Drawing.Size(97, 19);
+            this.tmSet.Text = "SET REMINDER";
             // 
             // sETTIMEToolStripMenuItem
             // 

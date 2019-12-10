@@ -103,12 +103,6 @@
     <Compile Include="setTimeRemind.Designer.cs">
       <DependentUpon>setTimeRemind.cs</DependentUpon>
     </Compile>
-    <Compile Include="showTimeTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="showTimeTable.Designer.cs">
-      <DependentUpon>showTimeTable.cs</DependentUpon>
-    </Compile>
     <Compile Include="Table.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -129,9 +123,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="setTimeRemind.resx">
       <DependentUpon>setTimeRemind.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="showTimeTable.resx">
-      <DependentUpon>showTimeTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="updateStudentForm.resx">
       <DependentUpon>updateStudentForm.cs</DependentUpon>
