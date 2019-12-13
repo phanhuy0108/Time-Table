@@ -39,7 +39,7 @@ namespace indextimetable
         {
             if(reminderDateTime < DateTime.Now)
             {
-                MessageBox.Show("now");
+                MessageBox.Show("TIME TO STUDY NOW");
                 reminderDateTime = null;
             }           
             Debug.WriteLine(DateTime.Now);

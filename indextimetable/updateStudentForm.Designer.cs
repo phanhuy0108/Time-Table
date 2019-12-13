@@ -116,7 +116,7 @@
             this.btnSave.Location = new System.Drawing.Point(49, 303);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 1;
+            this.btnSave.TabIndex = 7;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = true;
             // 
@@ -125,7 +125,7 @@
             this.btnCancel.Location = new System.Drawing.Point(192, 303);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 1;
+            this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
@@ -134,14 +134,14 @@
             this.txtCaHoc.Location = new System.Drawing.Point(75, 40);
             this.txtCaHoc.Name = "txtCaHoc";
             this.txtCaHoc.Size = new System.Drawing.Size(203, 20);
-            this.txtCaHoc.TabIndex = 2;
+            this.txtCaHoc.TabIndex = 0;
             // 
             // txtThu2
             // 
             this.txtThu2.Location = new System.Drawing.Point(75, 73);
             this.txtThu2.Name = "txtThu2";
             this.txtThu2.Size = new System.Drawing.Size(203, 20);
-            this.txtThu2.TabIndex = 2;
+            this.txtThu2.TabIndex = 1;
             // 
             // txtThu3
             // 
@@ -155,28 +155,28 @@
             this.txtThu4.Location = new System.Drawing.Point(75, 141);
             this.txtThu4.Name = "txtThu4";
             this.txtThu4.Size = new System.Drawing.Size(203, 20);
-            this.txtThu4.TabIndex = 2;
+            this.txtThu4.TabIndex = 3;
             // 
             // txtThu5
             // 
             this.txtThu5.Location = new System.Drawing.Point(75, 172);
             this.txtThu5.Name = "txtThu5";
             this.txtThu5.Size = new System.Drawing.Size(203, 20);
-            this.txtThu5.TabIndex = 2;
+            this.txtThu5.TabIndex = 4;
             // 
             // txtThu6
             // 
             this.txtThu6.Location = new System.Drawing.Point(75, 208);
             this.txtThu6.Name = "txtThu6";
             this.txtThu6.Size = new System.Drawing.Size(203, 20);
-            this.txtThu6.TabIndex = 2;
+            this.txtThu6.TabIndex = 5;
             // 
             // txtThu7
             // 
             this.txtThu7.Location = new System.Drawing.Point(75, 245);
             this.txtThu7.Name = "txtThu7";
             this.txtThu7.Size = new System.Drawing.Size(203, 20);
-            this.txtThu7.TabIndex = 2;
+            this.txtThu7.TabIndex = 6;
             // 
             // updateStudentForm
             // 

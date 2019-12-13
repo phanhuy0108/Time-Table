@@ -53,7 +53,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(929, 380);
+            this.dataGridView1.Size = new System.Drawing.Size(1127, 269);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel1
@@ -65,16 +65,17 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(929, 407);
+            this.panel1.Size = new System.Drawing.Size(1127, 296);
             this.panel1.TabIndex = 3;
             // 
             // label
             // 
             this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label.Location = new System.Drawing.Point(741, 3);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(68, 24);
+            this.label.Size = new System.Drawing.Size(63, 24);
             this.label.TabIndex = 6;
             this.label.Text = "label1";
             // 
@@ -86,7 +87,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(13, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(929, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(1127, 27);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -110,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 407);
+            this.ClientSize = new System.Drawing.Size(1127, 296);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
