@@ -4,8 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="be50312b2e644bf6addd18fe123a0ce4" Name="Diagram1" >
-        <EntityTypeShape EntityType="TKBModel.Table" Width="1.5" PointX="0.75" PointY="0.75" />
+      <Diagram DiagramId="7b3ae5eba35b486da70b9c85db7d8ef9" Name="Diagram1">
+        <EntityTypeShape EntityType="ThoiKhoaBieuModel.Table" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

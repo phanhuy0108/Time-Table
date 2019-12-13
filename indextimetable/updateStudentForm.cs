@@ -26,13 +26,13 @@ namespace indextimetable
         {
             var business = new subjectManagerment();
             var oldSubject = business.getSubjects(this.subjectID);
-            this.txtCaHoc.Text = oldSubject.CA_HỌC;
-            this.txtThu2.Text = oldSubject.Thứ_2;
-            this.txtThu3.Text = oldSubject.Thứ_3;
-            this.txtThu4.Text = oldSubject.Thứ_4;
-            this.txtThu5.Text = oldSubject.Thứ_5;
-            this.txtThu6.Text = oldSubject.Thứ_6;
-            this.txtThu7.Text = oldSubject.Thứ_7;
+            this.txtCaHoc.Text = oldSubject.Ca_Học;
+            this.txtThu2.Text = oldSubject.Thứ_Hai;
+            this.txtThu3.Text = oldSubject.Thứ_Ba;
+            this.txtThu4.Text = oldSubject.Thứ_Tư;
+            this.txtThu5.Text = oldSubject.Thứ_Năm;
+            this.txtThu6.Text = oldSubject.Thứ_Sáu;
+            this.txtThu7.Text = oldSubject.Thứ_Bảy;
         }
 
 

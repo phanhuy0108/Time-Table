@@ -24,13 +24,13 @@ namespace indextimetable
         {
             var db = new TKBEntities();
             var newSubject = new Table();
-            newSubject.CA_HỌC = CaHoc;
-            newSubject.Thứ_2 = thu2;
-            newSubject.Thứ_3 = thu3;
-            newSubject.Thứ_4 = thu4;
-            newSubject.Thứ_5 = thu5;
-            newSubject.Thứ_6 = thu6;
-            newSubject.Thứ_7 = thu7;
+            newSubject.Ca_Học = CaHoc;
+            newSubject.Thứ_Hai = thu2;
+            newSubject.Thứ_Ba = thu3;
+            newSubject.Thứ_Tư = thu4;
+            newSubject.Thứ_Năm = thu5;
+            newSubject.Thứ_Sáu = thu6;
+            newSubject.Thứ_Bảy = thu7;
             db.Tables.Add(newSubject);
             db.SaveChanges();
             db.Dispose();
@@ -39,13 +39,13 @@ namespace indextimetable
         {
             var db = new TKBEntities();
             var currentSubject = db.Tables.Find(id);
-            currentSubject.CA_HỌC = CaHoc;
-            currentSubject.Thứ_2 = thu2;
-            currentSubject.Thứ_3 = thu3;
-            currentSubject.Thứ_4 = thu4;
-            currentSubject.Thứ_5 = thu5;
-            currentSubject.Thứ_6 = thu6;
-            currentSubject.Thứ_7 = thu7;
+            currentSubject.Ca_Học = CaHoc;
+            currentSubject.Thứ_Hai = thu2;
+            currentSubject.Thứ_Ba = thu3;
+            currentSubject.Thứ_Tư = thu4;
+            currentSubject.Thứ_Năm = thu5;
+            currentSubject.Thứ_Sáu = thu6;
+            currentSubject.Thứ_Bảy = thu7;
             db.Entry(currentSubject).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
 
