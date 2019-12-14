@@ -25,13 +25,16 @@ namespace indextimetable
             this.timer1.Tick += Timer1_Tick;
 
             // Make the timer start now and tick every 500 ms.
-            TheTimer = new System.Threading.Timer(this.Tick, null, 0, 5000);
+            TheTimer = new System.Threading.Timer(this.Tick, null, 0, 1000);
         }
 
-        // The timer ticked.
+        
         public void Tick(object info)
         {
+            while (!this.IsHandleCreated)
+                System.Threading.Thread.Sleep(100);
             this.Invoke((Action)this.CheckReminderDate);
+          //  this.Invoke((Action)this.CheckReminderDate);
         }
 
         // Update the countdown on the UI thread.
@@ -70,7 +73,7 @@ namespace indextimetable
             if (dataGridView1.SelectedRows.Count == 1)
             {
                 var subject = (Table)this.dataGridView1.SelectedRows[0].DataBoundItem;
-                var updateForm = new updateStudentForm(subject.ID);
+                var updateForm = new updateStudentForm(subject.Id);
                 updateForm.ShowDialog();
                 this.loadAllSubject();
             }

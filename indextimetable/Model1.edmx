@@ -4,60 +4,61 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="TKBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="ThoiKhoaBieuModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Table">
           <Key>
-            <PropertyRef Name="ID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="CA HỌC" Type="nvarchar" MaxLength="20" Nullable="false" />
-          <Property Name="Thứ 2" Type="nvarchar" MaxLength="20" />
-          <Property Name="Thứ 3" Type="nvarchar" MaxLength="20" />
-          <Property Name="Thứ 4" Type="nvarchar" MaxLength="20" />
-          <Property Name="Thứ 5" Type="nvarchar" MaxLength="20" />
-          <Property Name="Thứ 6" Type="nvarchar" MaxLength="20" />
-          <Property Name="Thứ 7" Type="nvarchar" MaxLength="20" />
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Ca Học" Type="nvarchar" MaxLength="20" />
+          <Property Name="Thứ Hai" Type="nvarchar" MaxLength="20" />
+          <Property Name="Thứ Ba" Type="nvarchar" MaxLength="20" />
+          <Property Name="Thứ Tư" Type="nvarchar" MaxLength="20" />
+          <Property Name="Thứ Năm" Type="nvarchar" MaxLength="20" />
+          <Property Name="Thứ Sáu" Type="nvarchar" MaxLength="20" />
+          <Property Name="Thứ Bảy" Type="nvarchar" MaxLength="20" />
         </EntityType>
-        <EntityContainer Name="TKBModelStoreContainer">
+        <EntityContainer Name="ThoiKhoaBieuModelStoreContainer">
           <EntitySet Name="Table" EntityType="Self.Table" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="TKBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="TKBEntities" annotation:LazyLoadingEnabled="true" >
-          <EntitySet Name="Tables" EntityType="TKBModel.Table" />
-        </EntityContainer>
+      <Schema Namespace="ThoiKhoaBieuModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Table">
           <Key>
-            <PropertyRef Name="ID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="CA_HỌC" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="Thứ_2" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="Thứ_3" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="Thứ_4" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="Thứ_5" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="Thứ_6" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="Thứ_7" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Ca_Học" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Thứ_Hai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Thứ_Ba" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Thứ_Tư" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Thứ_Năm" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Thứ_Sáu" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Thứ_Bảy" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
         </EntityType>
+        <EntityContainer Name="TKBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Tables" EntityType="Self.Table" />
+        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="TKBModelStoreContainer" CdmEntityContainer="TKBEntities" >
+        <EntityContainerMapping StorageEntityContainer="ThoiKhoaBieuModelStoreContainer" CdmEntityContainer="TKBEntities">
           <EntitySetMapping Name="Tables">
-            <EntityTypeMapping TypeName="TKBModel.Table">
+            <EntityTypeMapping TypeName="ThoiKhoaBieuModel.Table">
               <MappingFragment StoreEntitySet="Table">
-                <ScalarProperty Name="Thứ_7" ColumnName="Thứ 7" />
-                <ScalarProperty Name="Thứ_6" ColumnName="Thứ 6" />
-                <ScalarProperty Name="Thứ_5" ColumnName="Thứ 5" />
-                <ScalarProperty Name="Thứ_4" ColumnName="Thứ 4" />
-                <ScalarProperty Name="Thứ_3" ColumnName="Thứ 3" />
-                <ScalarProperty Name="Thứ_2" ColumnName="Thứ 2" />
-                <ScalarProperty Name="CA_HỌC" ColumnName="CA HỌC" />
-                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ca_Học" ColumnName="Ca Học" />
+                <ScalarProperty Name="Thứ_Hai" ColumnName="Thứ Hai" />
+                <ScalarProperty Name="Thứ_Ba" ColumnName="Thứ Ba" />
+                <ScalarProperty Name="Thứ_Tư" ColumnName="Thứ Tư" />
+                <ScalarProperty Name="Thứ_Năm" ColumnName="Thứ Năm" />
+                <ScalarProperty Name="Thứ_Sáu" ColumnName="Thứ Sáu" />
+                <ScalarProperty Name="Thứ_Bảy" ColumnName="Thứ Bảy" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

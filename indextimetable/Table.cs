@@ -14,13 +14,13 @@ namespace indextimetable
     
     public partial class Table
     {
-        public int ID { get; set; }
-        public string CA_HỌC { get; set; }
-        public string Thứ_2 { get; set; }
-        public string Thứ_3 { get; set; }
-        public string Thứ_4 { get; set; }
-        public string Thứ_5 { get; set; }
-        public string Thứ_6 { get; set; }
-        public string Thứ_7 { get; set; }
+        public int Id { get; set; }
+        public string Ca_Học { get; set; }
+        public string Thứ_Hai { get; set; }
+        public string Thứ_Ba { get; set; }
+        public string Thứ_Tư { get; set; }
+        public string Thứ_Năm { get; set; }
+        public string Thứ_Sáu { get; set; }
+        public string Thứ_Bảy { get; set; }
     }
 }
