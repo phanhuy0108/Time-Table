@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tmAdd = new System.Windows.Forms.ToolStripMenuItem();
             this.tmSet = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,7 +58,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label);
+            this.panel1.Controls.Add(this.lblTime);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -68,16 +68,16 @@
             this.panel1.Size = new System.Drawing.Size(1127, 296);
             this.panel1.TabIndex = 3;
             // 
-            // label
+            // lblTime
             // 
-            this.label.AutoSize = true;
-            this.label.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label.Location = new System.Drawing.Point(741, 3);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(63, 24);
-            this.label.TabIndex = 6;
-            this.label.Text = "label1";
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTime.Location = new System.Drawing.Point(741, 3);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(55, 24);
+            this.lblTime.TabIndex = 6;
+            this.lblTime.Text = "Time";
             // 
             // menuStrip1
             // 
@@ -136,7 +136,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tmAdd;
         private System.Windows.Forms.ToolStripMenuItem tmSet;
-        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Timer timer1;
     }
 }

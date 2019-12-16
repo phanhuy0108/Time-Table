@@ -26,5 +26,6 @@ namespace indextimetable
         }
     
         public virtual DbSet<Table> Tables { get; set; }
+        public virtual DbSet<TaiKhoan> TaiKhoans { get; set; }
     }
 }

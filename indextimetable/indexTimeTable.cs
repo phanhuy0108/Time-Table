@@ -13,7 +13,7 @@ namespace indextimetable
 
         public static DateTime? reminderDateTime = null;
 
-        public indexTimeTable()
+        public indexTimeTable(string taikhoan)
         {
             Business = new subjectManagerment();
             InitializeComponent();
@@ -32,9 +32,8 @@ namespace indextimetable
         public void Tick(object info)
         {
             while (!this.IsHandleCreated)
-                System.Threading.Thread.Sleep(100);
+                System.Threading.Thread.Sleep(500);
             this.Invoke((Action)this.CheckReminderDate);
-          //  this.Invoke((Action)this.CheckReminderDate);
         }
 
         // Update the countdown on the UI thread.
@@ -50,7 +49,7 @@ namespace indextimetable
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            label.Text = DateTime.Now.ToLongTimeString();
+            lblTime.Text = DateTime.Now.ToLongTimeString();
 
         }
 

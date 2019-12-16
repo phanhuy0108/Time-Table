@@ -6,6 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="7b3ae5eba35b486da70b9c85db7d8ef9" Name="Diagram1">
         <EntityTypeShape EntityType="ThoiKhoaBieuModel.Table" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThoiKhoaBieuModel.TaiKhoan" Width="1.5" PointX="3.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

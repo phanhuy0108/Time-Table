@@ -13,7 +13,7 @@ namespace indextimetable
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new indexTimeTable());
+            Application.Run(new signin());
         }
     }
 }

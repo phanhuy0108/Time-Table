@@ -50,5 +50,23 @@ namespace indextimetable
             db.SaveChanges();
 
         }
+        public bool IsValidLogin(string taiKhoan, string matKhau)
+        {
+            TKBEntities db = new TKBEntities();
+            List<TaiKhoan> listTK = db.TaiKhoans.ToList();
+            TaiKhoan temp = new TaiKhoan();
+            temp.taiKhoan1 = taiKhoan;
+            temp.matKhau = matKhau;
+            bool isValid = false;
+            for (int i = 0; i < listTK.Count; i++)
+            {
+                if (listTK[i].taiKhoan1 == temp.taiKhoan1 &&
+                    listTK[i].matKhau == temp.matKhau)
+                {
+                    isValid = true;
+                }
+            }
+            return isValid;
+        }
     }
 }
