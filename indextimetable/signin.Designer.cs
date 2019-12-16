@@ -87,7 +87,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(245, 179);
+            this.btnCancel.Location = new System.Drawing.Point(245, 190);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(84, 37);
             this.btnCancel.TabIndex = 3;
@@ -96,7 +96,7 @@
             // 
             // btnSignIn
             // 
-            this.btnSignIn.Location = new System.Drawing.Point(58, 179);
+            this.btnSignIn.Location = new System.Drawing.Point(47, 190);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(86, 37);
             this.btnSignIn.TabIndex = 2;

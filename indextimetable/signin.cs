@@ -25,17 +25,19 @@ namespace indextimetable
         {
             if (Business.IsValidLogin(txtAcc.Text, txtPass.Text))
             {
-                MessageBox.Show("Dang nhap thanh cong");
+                MessageBox.Show("------Wellcome Back Master-----");
                 indexTimeTable QLMH = new indexTimeTable(txtAcc.Text);
                 QLMH.ShowDialog();
                 this.Close();
-                
+                               
             }
 
             else
             {
-                MessageBox.Show("Dang nhap that bai");
+                MessageBox.Show("-----TRY AGAIN-----"); 
             }
+            
+            
             
 
         }
