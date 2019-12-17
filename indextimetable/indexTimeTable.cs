@@ -20,13 +20,28 @@ namespace indextimetable
             this.Load += Form1_Load;
             this.dataGridView1.DoubleClick += DataGridView1_DoubleClick;
             this.tmAdd.Click += TmAdd_Click;
-            
+            this.tmDelete.Click += tmDelete_Click;
             this.tmSet.Click += TmSet_Click;
             this.timer1.Tick += Timer1_Tick;
 
             // Make the timer start now and tick every 500 ms.
             TheTimer = new System.Threading.Timer(this.Tick, null, 0, 1000);
         }
+
+        void tmDelete_Click(object sender, EventArgs e)
+        {
+            if (this.dataGridView1.SelectedRows.Count == 1)
+            {
+                if (MessageBox.Show("Do you want to delete ?", "Confirm",
+                    MessageBoxButtons.YesNo) == DialogResult.Yes) ;
+                {
+                    var subject = (Table)this.dataGridView1.SelectedRows[0].DataBoundItem;
+                    this.Business.deleteStudent(subject.Id);
+                    this.loadAllSubject();
+                }
+            }
+        }
+
 
         
         public void Tick(object info)

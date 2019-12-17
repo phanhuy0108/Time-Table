@@ -36,6 +36,7 @@
             this.tmAdd = new System.Windows.Forms.ToolStripMenuItem();
             this.tmSet = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.tmDelete = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -83,7 +84,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tmAdd,
-            this.tmSet});
+            this.tmSet,
+            this.tmDelete});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(13, 4, 0, 4);
@@ -106,6 +108,12 @@
             // timer1
             // 
             this.timer1.Enabled = true;
+            // 
+            // tmDelete
+            // 
+            this.tmDelete.Name = "tmDelete";
+            this.tmDelete.Size = new System.Drawing.Size(57, 19);
+            this.tmDelete.Text = "DELETE";
             // 
             // indexTimeTable
             // 
@@ -138,6 +146,7 @@
         private System.Windows.Forms.ToolStripMenuItem tmSet;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripMenuItem tmDelete;
     }
 }
 

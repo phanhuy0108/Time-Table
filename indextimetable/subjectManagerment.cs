@@ -68,5 +68,12 @@ namespace indextimetable
             }
             return isValid;
         }
+        public void deleteStudent(int id)
+        {
+            var db = new TKBEntities();
+            var subject = db.Tables.Find(id);
+            db.Tables.Remove(subject);
+            db.SaveChanges();
+        }
     }
 }
