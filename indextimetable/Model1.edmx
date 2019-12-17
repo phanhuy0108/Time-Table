@@ -20,9 +20,9 @@
         </EntityType>
         <EntityType Name="TaiKhoan">
           <Key>
-            <PropertyRef Name="TaiKhoan" />
+            <PropertyRef Name="TaiKhoan1" />
           </Key>
-          <Property Name="TaiKhoan" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="TaiKhoan1" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="MatKhau" Type="varchar" MaxLength="20" />
         </EntityType>
         <EntityContainer Name="TKBModelStoreContainer">
@@ -81,7 +81,7 @@
           <EntitySetMapping Name="TaiKhoans">
             <EntityTypeMapping TypeName="TKBModel.TaiKhoan">
               <MappingFragment StoreEntitySet="TaiKhoan">
-                <ScalarProperty Name="TaiKhoan1" ColumnName="TaiKhoan" />
+                <ScalarProperty Name="TaiKhoan1" ColumnName="TaiKhoan1" />
                 <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
               </MappingFragment>
             </EntityTypeMapping>

@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f6da7b5c07144b09b6dfae62be044be4" Name="Diagram1">
+      <Diagram DiagramId="e0b165a4e2d74f4787626ef38d757e7b" Name="Diagram1">
         <EntityTypeShape EntityType="TKBModel.Table" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="TKBModel.TaiKhoan" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
