@@ -36,7 +36,7 @@ namespace indextimetable
                     MessageBoxButtons.YesNo) == DialogResult.Yes) ;
                 {
                     var subject = (Table)this.dataGridView1.SelectedRows[0].DataBoundItem;
-                    this.Business.deleteStudent(subject.Id);
+                    this.Business.deleteSubject(subject.Id);
                     this.loadAllSubject();
                 }
             }

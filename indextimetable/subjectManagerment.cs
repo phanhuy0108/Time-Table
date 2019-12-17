@@ -68,7 +68,7 @@ namespace indextimetable
             }
             return isValid;
         }
-        public void deleteStudent(int id)
+        public void deleteSubject(int id)
         {
             var db = new TKBEntities();
             var subject = db.Tables.Find(id);
