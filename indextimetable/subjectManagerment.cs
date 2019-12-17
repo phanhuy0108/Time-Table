@@ -55,13 +55,13 @@ namespace indextimetable
             TKBEntities db = new TKBEntities();
             List<TaiKhoan> listTK = db.TaiKhoans.ToList();
             TaiKhoan temp = new TaiKhoan();
-            temp.taiKhoan1 = taiKhoan;
-            temp.matKhau = matKhau;
+            temp.TaiKhoan1 = taiKhoan;
+            temp.MatKhau = matKhau;
             bool isValid = false;
             for (int i = 0; i < listTK.Count; i++)
             {
-                if (listTK[i].taiKhoan1 == temp.taiKhoan1 &&
-                    listTK[i].matKhau == temp.matKhau)
+                if (listTK[i].TaiKhoan1 == temp.TaiKhoan1 &&
+                    listTK[i].MatKhau == temp.MatKhau)
                 {
                     isValid = true;
                 }
